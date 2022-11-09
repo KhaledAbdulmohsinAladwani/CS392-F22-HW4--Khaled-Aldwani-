@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class CS216Project {
-    static int TotalCost = 0;
+    static int TotalCost = 99999;
 
     public static void MinimumPath(int[][] Map, int number, int x, int y, int cost, int[][] visited) {
         int[] x_axis = { -1, 1, 0, 0 };
