@@ -2,7 +2,7 @@ import java.util.*;
 
 
 public class CS216Project {
-    static int TotalCost = 0;
+    static int TotalCost = 999999;
 
     public static void MinimumPath(int[][] Map, int number, int x, int y, int cost, int[][] visited) {
         int[] x_axis = { -1, 1, 0, 0 };
@@ -26,19 +26,19 @@ public class CS216Project {
 
     public static void main(String[] args) {
         
-        Random r=new Random();
-        int number=10;
+       
+        int number;
         
-       // Scanner input = new Scanner(System.in);
+       Scanner input = new Scanner(System.in);
         
-        //System.out.println("Enter the Colums and Rows number: \n");
-        
+        System.out.println("Enter the Colums and Rows number: \n");
+        number = input.nextInt();
         int[][] visited = new int[number][number];
         int[][] Map = new int[number][number];
 
         for (int i = 0; i < number; i++) {
             for (int j = 0; j < number; j++) {
-                Map[i][j] =  number;
+                Map[i][j] = input.nextInt();
                 visited[i][j] = 0;
             }
         }
