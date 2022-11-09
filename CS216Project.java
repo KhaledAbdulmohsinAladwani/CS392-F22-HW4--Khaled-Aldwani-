@@ -25,6 +25,7 @@ public class CS216Project {
     }
 
     public static void main(String[] args) {
+        Random r = new Random();
         
        
         int number;
@@ -32,13 +33,13 @@ public class CS216Project {
        Scanner input = new Scanner(System.in);
         
         System.out.println("Enter the Colums and Rows number: \n");
-        number = input.nextInt();
+        number = r.nextInt(10);
         int[][] visited = new int[number][number];
         int[][] Map = new int[number][number];
 
         for (int i = 0; i < number; i++) {
             for (int j = 0; j < number; j++) {
-                Map[i][j] = input.nextInt();
+                Map[i][j] = r.nextInt();
                 visited[i][j] = 0;
             }
         }
